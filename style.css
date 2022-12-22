@@ -1,0 +1,216 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url("https://fonts.google.com/specimen/Inter?query=inter");
+:root {
+    --bg-default: #F5F4F8;
+    --bg-lighter: #FFFFFF; 
+    --bg-jumbo: #7550FE;
+    --bg-btn: #1ACB98;
+    --bg-logo: #FFEEDA;
+    --font-default: #19113C;
+    --font-lighter: #5C5776;
+    --font-lightest: #ababab;
+    --font-white: #FFFFFF;
+    --font-logo: #C28135;
+    --font-size-h1: 48px;
+    --font-size-jumbo: 24px;
+    --font-size-default: 18px;
+    --font-size-footer: 14px;
+    --border-default: #bcbcbc;
+}
+body  {
+    margin: 0;
+    width: 100vw;
+    font-family: Inter, Arial;
+    color: var(--font-default);
+    background-color: var(--bg-default);
+    font-size: var(--font-size-default);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.width-smaller {
+    width: 75%;
+    margin-inline: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    margin-right: auto;
+}
+nav a {
+    text-decoration: none;
+    color: var(--font-default);
+    padding-right: 2em;
+    font-weight: bold;
+}
+.logo {
+    padding-right: 2em;
+    width: 4.5em;
+}
+.logo-wrapper img, .jumbo-img-wrapper img, .logo img  {
+    width: 100%;
+}
+.jumbotron {
+    background-color: var(--bg-jumbo);
+    color: var(--font-lightest);
+    font-size: var(--font-size-jumbo);
+}
+h1 {
+    color: var(--font-white);
+    margin-block: 0;
+}
+h2, h3 {
+    color: var(--font-default);
+    margin: 0;
+}
+h2 {
+    margin-bottom: 1em;
+}
+.jumbotron > .width-smaller {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.jumbo-img-wrapper {
+    display: flex;
+    flex: 1 1 0%;
+}
+
+.jumbo-text-wrapper {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 0;
+    font-size: var(--font-size-jumbo);
+    row-gap: 1.5em;
+}
+.jumbo-text-wrapper p {
+    max-width: 75%;
+    margin-block: 0;
+}
+footer {
+    display: flex;
+    font-size: var(--font-size-footer);
+}
+.border-top {
+    padding-block: 1.5em;
+    border-top: 1px outset var(--border-default);
+}
+footer a {
+    color: var(--font-lighter);
+}
+.copyright {
+    margin-right: auto;
+}
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+    background-color: var(--bg-logo);
+    color: var(--font-logo);
+    overflow: hidden;
+}
+.light-logo {
+    background-color: var(--bg-lighter);
+    color: var(--font-lighter);
+}
+header .logo-wrapper {
+    margin-left: 1em;
+}
+.subbar {
+    font-size: var(--font-size-default);
+    background-color: var(--bg-lighter);
+}
+.subbar > .width-smaller {
+    display: flex;
+    justify-content: space-between;
+}
+.subbar-item {
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    column-gap: 1em;
+}
+.subbar-item > .text-wrapper {
+    padding-block: 1em;
+}
+.btn {
+    font-size: var(--font-size-btn);
+    font-weight: bold;
+    padding-block: 1em;
+    padding-inline: 1.5em;
+    text-align: center;
+    border: none;
+    color: var(--font-default);
+    background-color: var(--bg-lighter);
+    border-radius: 5px;
+}
+.btn-colored {
+    color: var(--font-white);
+    background-color: var(--bg-btn);
+}
+.header-buttons {
+    display: flex;
+    row-gap: 56px;
+}
+section {
+    margin-block: 10em;
+    position: relative;
+}
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    color: var(--font-lighter);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-lighter);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 23%;
+    box-shadow: 0px 0px 2px var(--border-default);
+}
+.card-body {
+    padding: 1em;
+}
+.card-body div {
+    padding-block: 1em;
+}
+.card-body b {
+    color: var(--font-default);
+    padding-right: 0.2em;
+}
+.stars {
+    padding-block: 1.5em;
+    color: gold;
+}
+.card-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.card-author p {
+    margin-inline: 1em auto;
+}
+.left {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+}
+.right {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+}
